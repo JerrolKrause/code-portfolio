@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>      
+<page>
+
+    <server>{{queryString}}</server>
+    
+    <!--  TEMPLATES -->
+    <templates>
+        <layout>homepage2</layout>
+    </templates>
+    
+    <!-- HEADER  -->
+    <header>
+        <title>Prepaid Cell Phones &amp; No Contract Cell Phones</title>
+        <metaDescription>See Boost's newest prepaid cell phones. With Android and feature phones available, our no-contract cell phone plans offer the latest devices at a great rate.</metaDescription>
+        <metaKeywords></metaKeywords>
+        
+        <!-- CSS Files -->
+        <stylesheets>
+            <file>
+                <link>/_themes/h5bp/css/homepage2.css</link>
+            </file>
+            <file>
+                <link>/_themes/h5bp/css/genie3.css</link>
+            </file>
+        </stylesheets>
+        
+        <!-- Javascript -->
+        <scripts>
+            <!-- Files -->
+            <file>
+                <link type="blocking">/_themes/h5bp/js/homepage2.min.js</link>
+            </file>
+            <file>
+                <link type="blocking">/_themes/libs/js/jquery.qtip.min.js</link>
+            </file>
+            <file>
+                <link type="blocking">/_themes/h5bp/js/genie3.js</link>
+            </file>
+        </scripts>
+        
+        <!-- Analytics Tagging -->
+        <analytics>
+            <omniture>
+                <pagename>Boost Mobile - Home Page</pagename>
+                <channel>Boost Mobile Home Page</channel>
+                <prop21>Boost Mobile Home Page</prop21>
+            </omniture>
+        </analytics>
+    </header>
+    
+    <!--   
+    MAIN CONTENT
+    The organization of this file is a one to many relationship. 
+    This allows us to only build ONE panel and use it in as many places as necessary without having to duplicate work
+    There are 4 permutations of the homepage, english+visitor, english+customer, spanish+visitor, spanish+customer. 
+    The panel content and order is defined below
+    -->
+    <content>
+      
+        <panelOrder>
+            <english>
+                <visitor> 
+                    <panel row="1" column="1" id="GrowingData" />
+                    <panel row="2" column="1" id="Free4GLTE" />
+                    <panel row="2" column="2" id="iPhone6sBUY" />
+                    <panel row="3" column="1" id="AllofMexico3" />
+                    <panel row="3" column="2" id="hotspot"/>
+                </visitor>
+                <customer>
+                    <panel row="1" column="1" id="GrowingData" />
+                    <panel row="2" column="1" id="iPhone6sBUY" />
+                    <panel row="2" column="2" id="4GLTESale"/>
+                    <panel row="3" column="1" id="AllofMexico2" />
+                    <panel row="3" column="2" id="hotspot" />
+                </customer>
+            </english>
+            <spanish>
+                <visitor> 
+                    <panel row="1" column="1" id="GrowingData" />
+                    <panel row="2" column="1" id="iPhone6sBUY" />
+                    <panel row="2" column="2" id="Free4GLTE"/>
+                    <panel row="3" column="1" id="AllofMexico3_sp"/>
+                    <panel row="3" column="2" id="hotspot"/>
+                </visitor>
+                <customer>
+                    <panel row="1" column="1" id="GrowingData" />
+                    <panel row="2" column="1" id="AllofMexico3_sp" />
+                    <panel row="2" column="2" id="4GLTESale" />
+                    <panel row="3" column="1" id="iPhone6sBUY"/>
+                    <panel row="3" column="2" id="hotspot"/>
+                </customer>
+            </spanish>
+        </panelOrder>
+          
+        <tileOrder>
+            <english>
+                <visitor>           
+                    <tile id="CertifiedPO"/>
+                    <tile id="DataPack"/>
+                    <tile id="callWatch"/>    
+                    <tile id="FreeShipping"/> 
+                </visitor>
+                <customer>
+                    <tile id="DataPack"/>
+                    <tile id="CertifiedPO"/>  
+                    <tile id="Social"/>
+                    <tile id="AutoRe-Boost"/>              
+                </customer>
+            </english>
+            <spanish>
+                <visitor>            
+                    <tile id="CertifiedPO"/>
+                    <tile id="DataPack"/>
+                    <tile id="callWatch"/>    
+                    <tile id="FreeShipping"/> 
+                </visitor>
+                <customer>
+                    <tile id="DataPack"/>
+                    <tile id="Referral"/>  
+                    <tile id="Social"/>
+                    <tile id="AutoRe-Boost"/>              
+                </customer>
+            </spanish>
+        </tileOrder>
+      
+     
+        <!-- Main Panels -->
+        <panels>
+            <panel id="iPhone6sBUY" no-translate=""><![CDATA[
+               <div id="iPhone6sBUY" class="home-panel" style="background-image: url('/_themes/h5bp/images/homepanels/iPhone6s.jpg');">
+                    <a style="background-color:transparent; border: 0px solid yellow; height:39px; left:115px; position:absolute; top:115px; width:120px;" href="/shop/phones/apple-iphone-6s/?icamp=INTC_HP_Row2b_Panel_iPhone6sBUY"></a><a style="background-color:transparent; border: 0px solid yellow; height:39px; left:245px; position:absolute; top:115px; width:120px;" href="/shop/phones/apple-iphone/6s/?icamp=INTC_HP_Row2b_Panel_iPhone6sLEARN"></a>
+                </div>
+         ]]></panel>
+            <panel id="AllofMexico3" no-translate="true"><![CDATA[
+               <div id="AllofMexico" class="home-panel" style="background-image: url('/_themes/h5bp/images/homepanels/AllMex_Box3.jpg');">
+                    <h2><span class="bn-bk">Unlimited Calls</span> to Mexico</h2> 
+                    <p class="bn-b"><span style="color:#fff;">&#36;5/mo.</span> Mobiles included.<br/> Add unlimited talk & text to Mexico.</p>
+                    <a class="btn roll-orange bn-bk" style="position:absolute;top:190px;" href="/shop/plans/international-connect/">Learn More</a>
+					<p class="legal" style="color:#000;position:absolute;top:230px;left:105px;">Available only for &#36;45 and &#36;55 Data Boost Plans.</p>
+                </div>
+         ]]></panel>
+            <panel id="AllofMexico3_sp" no-translate="true"><![CDATA[
+               <div id="AllofMexico" class="home-panel" style="background-image: url('/_themes/h5bp/images/homepanels/AllMex_Box3.jpg');">
+                    <h2><span class="bn-bk">Llamadas sin</span> L&iacute;mite a M&eacute;xico.</h2> 
+                    <p class="bn-b"><span style="color:#fff;">&#36;5 al mes.</span> Incluye a M&oacute;viles. Agrega llamados y<br/>textos sin l&iacute;mite a M&eacute;xico.</p>
+                    <a class="btn roll-orange bn-bk" style="position:absolute;top:190px;"  href="/shop/plans/international-connect/">Conoce m&aacute;s</a>
+					<p class="legal" style="color:#000;position:absolute;top:230px;left:45px;">Disponible exclusivamente para los planes Datos Boost de &#36;45 y &#36;55</p>
+                </div>
+         ]]></panel>
+            <panel id="30permonth" no-translate=""><![CDATA[
+               <div id="30permonth" class="home-panel full" style="background-image: url('/_themes/h5bp/images/homepanels/30permonth.jpg');">
+			   <h1 class="font-boostneo-black" style="color:#000;font-size:376px;position:absolute;top:-12px;left:30px;"><sup>&#36;</sup>30</h1>
+			   <h2 style="font: normal 18px/22px Arial;position:absolute;top:265px;left:590px;letter-spacing:-0.2px;">Includes <span style="font-weight:bold;">2GB</span> of high-speed data. Available<br/>only when you sign up on Auto-Re-Boost.</h2>
+				<p class="bn-b" style="position:absolute; top:190px;left:605px;letter-spacing:0.4px;"><span style="color:#fff;font-size:43px;">Data, talk &amp; text.</span></p>
+			   <a href="/upgrade/" class="btn black bn-bk" style="position:absolute;bottom:50px;right:30px;">Learn More</a> <p class="legal" style="font: 10px/12px Arial;position:absolute;bottom:15px;right:30px;text-align:right;left:auto;color:#000;letter-spacing:-0.3px;">&#36;30 Data Boost Up plan includes 2GB/mo. of high-speed data.</p>
+                </div>
+         ]]></panel>
+            <panel id="2GB4Life_en" no-translate="true"><![CDATA[
+               <div id="2GB4Life" class="home-panel full" style="background-image: url('/_themes/h5bp/images/homepanels/2GB4Life-en.jpg');">
+			   <h1 style="color:#000;font-size:72px;line-height:30px;position:absolute;top:98px;left:31px;" class="font-boostneo-black">AN EXTRA 2GB<br><span class="font-boostneo" style="font-size:38px;line-height:80px;letter-spacing:0px;">of high-speed data per month</span><br><span style="font-size:120px;line-height:60px;">FOR LIFE</span></h1>
+			   <p class="bn" style="font-size:26px;position:absolute;top:288px;left:27px;letter-spacing:-0.35px;">Text <span class="bn-b">&quot;boost2GB&quot;</span>  to 8005 for details on how to <br/>get an extra 2 GB of Data per month for life</p>
+			   <a href="/upgrade/" class="btn black bn-bk" style="position:absolute;bottom:70px;right:38px;">Learn More</a> 
+                           <p class="legal" style="font: 9px/12px Arial;position:absolute;bottom:15px;right:38px;text-align:right;left:auto;color:#000;letter-spacing:-0.25px;">Limited to customers with a minimum of 3 months of prior service on a qualifying monthly unlimited plan who have not switched plans in the past 90 days.<br/>Plan change will result in loss of eligibility for the extra 2GB of data. Text 8005 for program details and to check eligibility. Standard message &amp; data rates apply.</p>
+                </div>
+         ]]></panel>
+            <panel id="2GB4Life_sp" no-translate="true"><![CDATA[
+               <div id="2GB4Life" class="home-panel full" style="background-image: url('/_themes/h5bp/images/homepanels/2GB4Life-es.jpg');">
+			   <h1 style="text-align:center;color:#000;font-size:76px;line-height:30px;position:absolute;top:98px;left:40px;" class="font-boostneo-black">2GB EXTRAS<br><span class="font-boostneo" style="font-size:31px;line-height:70px;letter-spacing:0px;">de datos de alta velocidad por mes</span><br><span style="font-size:80px;line-height:35px;">DE POR VIDA</span></h1>
+			   <p class="bn" style="text-align:center;font-size:19px;position:absolute;top:255px;left:75px;letter-spacing:-0.1px;">Env&iacute;a texto <span class="bn-b" style="font-size:22px;">&quot;datos2GB&quot;</span>   al 8005 para saber c&oacute;mo<br/>obtener 2GB de datos extras al mes de por vida</p>
+			   <a href="/upgrade/" class="btn black bn-bk" style="position:absolute;bottom:70px;right:38px;">Conoce m&aacute;s</a> 
+                          <p class="legal" style="font: 9px/12px Arial;position:absolute;bottom:15px;right:38px;text-align:right;left:auto;color:#000;letter-spacing:-0.25px;">
+                            Exclusivo para clientes con un m&iacute;nimo de 3 meses previos inmediatos de servicio en un plan mensual sin l&iacute;mite elegible y que no hayan cambiado<br/>
+                            planes en los &uacute;ltimos 90 d&iacute;as. El cambio de plan ocasionar&aacute; la p&eacute;rdida de la elegibilidad para los 2GB extras de datos.
+                            Env&iacute;e un mensaje de texto al<br/>8005 para los detalles del programa y revisar la eleg&iacute;bilidad. Se aplican tarifas est&aacute;ndar de datos y de mensajer&iacute;a de textos.
+                            </p>
+                </div>
+         ]]></panel>
+            <panel id="GrowingData" no-translate=""><![CDATA[
+               <div id="GrowingData" class="home-panel full" style="background-image: url('/_themes/h5bp/images/homepanels/growingdata.jpg');">
+			   <h1 style="color:#000;font-size:65px;position:absolute;top:50px;left:390px;letter-spacing:0px; line-height:62px;">Only Boost&reg; grows<br>your data plan.</h1>
+			   <p class="bn-b" style="color:#000;font-size:20px;position:absolute;top:190px;left:390px;letter-spacing:0px;">Starting at</p>
+			   <p class="legal" style="font: 12px Arial;position:absolute;top:310px;left:390px;text-align:left;color:#000;letter-spacing:-0.25px;">Get up to 3GB of extra high-speed data after 18 on-time payments.</p>
+
+			   <a href="/shop/plans/monthly-phone-plans/" class="btn black bn-bk" style="position:absolute;bottom:40px;right:47px;">Learn More</a>
+
+                </div>
+         ]]></panel>
+            <panel id="SlashYourPayment_en" no-translate=""><![CDATA[
+               <div id="SlashYourPayment" class="home-panel full" style="background-image: url('/_themes/h5bp/images/homepanels/SlashYourPayment-en.jpg');">
+			   <h1 style="color:#fff;font-size:78px;position:absolute;top:93px;left:280px;" class="font-boostneo-black">YOUR</h1>
+			   <h2 style="color:#000;font-size:108px;position:absolute;top:145px;left:30px;letter-spacing:-4px;" class="font-boostneo-black">PAYMENT <span class="bn" style="color:#fff;letter-spacing:-1px;">&nbsp;IN HALF</span></h2>
+			   <p class="bn" style="color:#fff;font-size:38px;position:absolute;top:285px;left:35px;letter-spacing:0px;">when you switch from MetroPCS&#174;, Cricket<sup style="vertical-align:18px; font-size: 9px;">SM</sup> or T-Mobile&#174;</p>
+			   <a href="/in-store-offers/" class="btn black bn-bk" style="position:absolute;bottom:40px;right:47px;">Learn More</a>
+			   <p class="legal" style="font: 9px/12px Arial;position:absolute;bottom:15px;right:44px;text-align:right;left:auto;color:#000;letter-spacing:-0.25px;">Limited Time Offer. Discount for first 12 mos; applies to select monthly service plans only.</p>
+                </div>
+         ]]></panel>
+            <panel id="30autoreboost" no-translate=""><![CDATA[
+               <div id="30autoreboost" class="home-panel" style="background-image: url('/_themes/h5bp/images/homepanels/30autoreboost.jpg');">
+                    <h2 style="color:#000;font-size:27px;"><span style="font-size:30px;" class="bn-bk">&#36;30/mo.</span>  Unlimited data, talk &amp; text</h2>
+                    <p class="bn-b" style="color:#000;">Includes <span style="font-weight:bold;">2GB</span> of data.</p>
+					<p style="color:#000;font:12px/16px Arial;letter-spacing:-0.6px;" class="bn-b">Available only when you sign up on Auto Re-Boost<sup>SM</sup>.<br><a class="btn orange bn-bk" href="/shop/plans/30-databoost-up/">Learn More</a></p>                    
+                </div>
+         ]]></panel>
+            <panel id="Free4GLTE" no-translate=""><![CDATA[
+               <div id="Free4GLTE" class="home-panel" style="background-image: url('/_themes/h5bp/images/homepanels/Free4GLTE.jpg');">
+                    <h2 style="color:#000;"><strong>FREE</strong> 4G LTE PHONES</h2>
+                    <p class="bn-b" style="color:#000;">or up to <strong>&#36;50 OFF</strong> when you switch to Boost Mobile&reg;</strong><br>
+                    <a class="btn bn-bk" href="/in-store-offers/">Learn More</a>
+                </div>
+         ]]></panel>
+            <panel id="4GLTESale" no-translate=""><![CDATA[
+               <div id="4GLTESale" class="home-panel" style="background-image: url('/_themes/h5bp/images/homepanels/4GLTESale.jpg');">
+                    <h2 style="color:#000;"><strong>4G LTE PHONES</strong></h2>
+                    <p class="bn-b" style="color:#000;">Starting at &#36;19.99<br>
+                    <a class="btn bn-bk" href="/in-store-offers/" style="padding-top:-20px;">Learn More</a>
+                </div>
+         ]]></panel>	
+            <panel id="hotspot" no-translate=""><![CDATA[
+               <div id="WifiHotspots" class="home-panel" style="background-image: url('/_themes/h5bp/images/homepanels/hotspot.jpg');">
+                    <h2 style="color:#f99100;">Wi-Fi at home, Wi-Fi on the go.</h2>
+                    <p class="bn-b" style="color:#000;">Share 10GB of 4G LTE speed for<br>only <strong>&#36;50/mo.</strong><br>
+                    <p class="bn-b" style="color:#000;font-size:9.5px; padding-top:5px;">Device required (sold separately). <a href="/shop/plans/wifi-hotspots/#legal">See Terms</a>.</p>
+                    <a class="btn bn-bk" href="/shop/plans/wifi-hotspots/">Learn More</a>
+                </div>
+         ]]></panel>
+            <panel id="boostTV_eng" no-translate="true"><![CDATA[
+               <div id="free4gPhone" class="home-panel" style="background-image: url('/_themes/h5bp/images/homepanels/boosttv-eng.jpg');">
+                    <h2 style="color:#f99100;"><br/></h2>
+                    <p class="bn-b" style="color:#000;">Never miss a game.</p>
+                    <a class="btn orange bn-bk" href="/shop/boost-market/boost-tv/?icamp=INTC_SCHP_Row4a_Panel_boostTV">Learn More</a>
+                </div>
+         ]]></panel>
+            <panel id="boostTV_es" no-translate="true"><![CDATA[
+               <div id="free4gPhone" class="home-panel" style="background-image: url('/_themes/h5bp/images/homepanels/boostTV.jpg');">
+                    <a class="btn orange bn-bk" href="/shop/boost-market/boost-tv/?icamp=INTC_SCHP_Row4a_Panel_boostTV">Conoce M&aacute;s</a>
+                </div>
+         ]]></panel>
+            <panel id="Lumia50off" no-translate=""><![CDATA[
+               <div id="Lumia50off" class="home-panel" style="background-image: url('/_themes/h5bp/images/homepanels/Lumia50off.jpg');">
+                    <a class="btn orange bn-bk" href="/shop/phones/lumia-635/">Learn More</a>
+                </div>
+         ]]></panel>
+            <panel id="dataBoostUp" no-translate=""><![CDATA[
+               <div id="dataBoostUp" class="home-panel full" style="background-image: url('/_themes/h5bp/images/homepanels/35-bucks-a-month.jpg');">
+                    <h1 style="color:#fff;font-size:19px;position:absolute;top:313px;left:270px;" class="font-bn-b">After you sign up for Auto Re-Boost&trade;</h1>
+                    <a style="position:absolute;bottom:50px;right:20px;" class="btn bn-bk" href="/shop/plans/databoost-up/">Learn More</a>
+                    <p style="position:absolute;bottom:15px;right:20px;text-align:right;" class="legal">&#36;35 Data Boost Up plan includes 2.5GB/mo. of high-speed data.<br/> Requires Auto Re-Boost enrollment.</p>
+                </div>
+         ]]></panel>
+            <panel id="30dataBoostUp" no-translate=""><![CDATA[
+               <div id="30dataBoostUp" class="home-panel full" style="background-image: url('/_themes/h5bp/images/homepanels/30databoostup.jpg');">
+                    <h1 style="color:#fff;font-size:19px;position:absolute;top:313px;left:270px;" class="font-boostneo">Available only with 4G LTE phones<br>when you sign up on Auto Re-Boost&#8480;</h1>
+                    <a style="position:absolute;bottom:50px;right:20px;" class="btn orange bn-bk" href="/shop/plans/30-databoost-up/">Learn More</a>
+                    <p style="position:absolute;bottom:15px;right:20px;text-align:right;left:auto;" class="legal">&#36;30 Data Boost Up plan includes 2GB/mo. of high-speed data. </p>
+                </div>
+         ]]></panel>
+            <panel id="LGOffer" no-translate=""><![CDATA[
+               <div id="LGOffer" class="home-panel" style="background-image: url('/_themes/h5bp/images/homepanels/LGOffer.jpg');">
+                    <h2><span class="bn-bk">Two Great Phones</span><br/>Two Great Deals</h2>
+                    <a class="btn roll-orange bn-bk" href="/shop/phones/#/sort_data-position_asc/filter_sku_LGLS620ABB-LGLS740ABB/">Learn More</a>
+                </div>
+         ]]></panel>
+            <panel id="free4gPhone" no-translate=""><![CDATA[
+               <div id="free4gPhone" class="home-panel" style="background-image: url('/_themes/h5bp/images/homepanels/4g-phone1.jpg');">
+                    <h2 style="color:#f99100;"><span class="bn-bk">FREE</span> 4G LTE Phone</h2>
+                    <p class="bn-b" style="color:#fff;">When you switch to Boost Mobile.</p>
+                    <p class="bn-b" style="color:#fff;font-size:12px;">*In Store Only</p>
+                    <a class="btn orange bn-bk" href="/stores/">Learn More</a>
+                </div>
+         ]]></panel>
+            <panel id="ReferralBenefits" no-translate=""><![CDATA[
+               <div id="Referral" class="home-panel" style="background-image: url('/_themes/h5bp/images/homepanels/ReferralBenefits.jpg');">
+                    <h2 style="color:#f99100;"><span class="bn-bk">Your Friends Have Benefits</span></h2>
+                    <p class="bn-b" style="color:#fff;">Earn up to &#36;500/year for referring friends<br/> to Boost Mobile&reg;.</p>
+                    <a class="btn orange bn-bk" href="/shop/plans/referral-program/">Learn More</a>
+                </div>
+         ]]></panel>
+            <panel id="AllofMexico" no-translate=""><![CDATA[
+            <div id="AllofMexico" class="home-panel full" style="background-image: url('/_themes/h5bp/images/homepanels/AllofMexico.jpg');">
+               <h2 style="font-size:50px;line-height: 40px;margin-bottom:15px;"><span class="bn-bk">Unlimited Calls <br/>to Mexico</span></h2>
+               <div class="bn-b" style="font-size:30px;">Mobiles Included</div>
+               <p class="bn-b" style="font-size:18px;margin-top:95px;">Add unlimited talk &amp; text to Mexico.</p>
+               <a class="btn bn-bk" style="bottom: 70px;" href="/shop/plans/international-connect/">Learn More</a>
+              <p class="legal" style="color:#000;">Available only for &#36;45 & &#36;55 Data Boost Plans.</p>
+           </div>
+         ]]></panel>
+            <panel id="AllofMexicoSP" no-translate="true"><![CDATA[
+            <div id="AllofMexico" class="home-panel full" style="background-image: url('/_themes/h5bp/images/homepanels/AllofMexicoSP.jpg');">
+               <h2 style="font-size:50px;line-height: 40px;margin-bottom:15px;"><span class="bn-bk">Llamadas sin <br/>L&iacute;mite a M&eacute;xico.</span></h2>
+               <div class="bn-b" style="font-size:30px;">Incluye a M&oacute;viles</div>
+               <p class="bn-b" style="font-size:18px;margin-top:95px;">Agrega llamadas y textos sin l&iacute;mite a M&eacute;xico. <br/> Planes seleccionados.</p>
+               <a class="btn bn-bk" style="bottom: 70px;" href="/shop/plans/international-connect/">Conoce M&aacute;s</a>
+               <p class="legal" style="color:#000;">Disponible exclusivamente para los planes Datos Boost de &#36;45 y &#36;55</p>
+           </div>
+         ]]></panel>
+            <panel id="AllofMexico2" no-translate=""><![CDATA[
+               <div id="AllofMexico" class="home-panel" style="background-image: url('/_themes/h5bp/images/homepanels/AllMex_Box.jpg');">
+                    <h2><span class="bn-bk">Unlimited Calls</span> to Mexico</h2> 
+                    <p class="bn-b"><span style="color:#fff;">&#36;5/mo.</span> Mobiles included.<br/> Add unlimited talk & text to Mexico.</p>
+                    <a class="btn roll-orange bn-bk" style="position:absolute;top:190px;" href="/shop/plans/international-connect/">Learn More</a>
+					<p class="legal" style="color:#000;position:absolute;top:230px;left:105px;">Available only for &#36;45 & &#36;55 Data Boost Plans.</p>
+                </div>
+         ]]></panel>
+            <panel id="GS6" no-translate=""><![CDATA[
+               <div id="GS6PreReg" class="home-panel" style="background-image: url('/_themes/h5bp/images/homepanels/s6-home.jpg');">
+                    <a class="btn orange bn-bk" style="" href="/shop/phones/samsung-galaxy-s6/">Learn More</a>
+                </div>
+         ]]></panel>
+            <panel id="GS6" no-translate=""><![CDATA[
+               <div id="GS6PreReg" class="home-panel" style="background-image: url('/_themes/h5bp/images/homepanels/s6-home.jpg');">
+                    <a class="btn orange bn-bk" style="" href="/shop/phones/samsung-galaxy-s6/">Learn More</a>
+                </div>
+         ]]></panel>
+            <panel id="airG_sweeps" no-translate=""><![CDATA[
+               <div id="GS6PreReg" class="home-panel" style="background-image: url('/_themes/h5bp/images/homepanels/airg_sweeps.jpg');">
+                  	<h2><span class="boostneobold">Sign up for airG VIP</h2> <br>
+                    <p>and you could win a</p>
+					<p><span class="boostneobold">2015 RANGE ROVER EVOQUE</span> from airG!</p>
+                    <a class="btn" style="" href="http://summersweeps.airg.com/" target="new">Learn More</a><br>
+					<p style="position:absolute;bottom:55px;left:20px;text-align:left; font-size:16px; width:220px;" class="boostneo">Or win<br><span class="boostneobold">WEEKLY PRIZE PACKAGES!</span><br><br><span class="legal" style="color:#000; bottom:-46px;left:0px;width:210px;"><strong>NO PURCHASE NECESSARY</strong> Legal residents of 50 US States 18 yrs or older. Dates 4/1/15 to 7/28/15. To enter, and for Official Rules, <a href="http://summersweeps.airg.com/" target="new" style="color:#000">click here.</a></p>
+                </div>
+         ]]></panel> 
+        </panels>
+      
+    
+        <!-- Sub Tiles -->
+        <subtiles>
+            <tile id="DataPack" no-translate="" url="/shop/plans/data-packs/">
+                <title>Data Packs</title>
+                <description>Need more high-speed data? Add a data pack to your monthly plan.</description>
+            </tile>
+            <tile id="CertifiedPO" no-translate="" url="/shop/phones/#/sort_data-position_asc/filter_cpo/">
+                <title>Certified Pre-owned Phones</title>
+                <description>Get a phone that looks like new - at a fraction of the cost. Inspected, tested &#38; equipped with the latest software.</description>
+            </tile>
+            <tile id="IC" no-translate="" url="/shop/plans/international-services/">
+                <title>International Calling Plans</title>
+                <description>International calling options to fit your budget and lifestyle.</description>
+            </tile>
+            <tile id="MobileHotspot" no-translate="" url="/shop/plans/mobile-hotspot/">
+                <title>Mobile Hotspot</title>
+                <description>Wi-Fi as low as &#36;3/day.</description>
+            </tile>
+            <tile id="FreeShipping" no-translate="" url="/shop/phones/">
+                <title>Amazing phones, amazing prices</title>
+                <description>Free Shipping too! All the time. No minimums. No kidding.</description>
+            </tile>   
+            <tile id="PlayphoneApp" no-translate="" url="/shop/boost-market/entertainment/">
+                <title>PlayPhone Gaming App</title>
+                <description>Take your mobile gaming to the next level.</description>
+            </tile>
+            <tile id="BMobileWallet" no-translate="" url="https://boostmobile.wipit.me/">
+                <title>Boost Mobile Wallet</title>
+                <description>FREE Visa Prepaid Card &amp; Mobile Wallet. Get cash at ATMs, load checks, pay bills, send money, and more.</description>
+            </tile>
+            <tile id="BMobileWalletES" no-translate="" url="https://boostmobile.wipit.me/es/inicial">
+                <title>Boost Mobile Wallet</title>
+                <description>FREE Visa Prepaid Card &amp; Mobile Wallet. Get cash at ATMs, load checks, pay bills, send money, and more.</description>
+            </tile>
+            <tile id="AutoRe-Boost" no-translate="" url="/reboost/">
+                <title><![CDATA[Auto Re-Boost<sup>SM</sup>]]></title>
+                <description>Automatically add funds to your prepaid cell phone.</description>
+            </tile>
+            <tile id="Referral" no-translate="" url="/shop/plans/referral-program/">
+                <title>Referral Program</title>
+                <description>Earn up to &#36;500/year for referring friends to Boost Mobile. </description>
+            </tile>        
+            <tile id="Social" no-translate="" url="/social/">
+                <title>Be Social</title>
+                <description>Follow us for exclusive tips, good laughs, a chance to win giveaways and so much more.</description>
+            </tile>        
+            <tile id="boostTV" no-translate="" url="/shop/boost-market/boost-tv/">
+                <title>boostTV Live Sports </title>
+                <description>View your favorite sports programming on your phone wherever. Add to your monthly plan for an additional &#36;10/mo. </description>
+            </tile> 
+            <tile id="callWatch" no-translate="" url="/shop/boost-market/callwatch/">
+                <title>CallWatch</title>
+                <description>Get alerts in real-time of all suspicious and unwanted incoming calls and text messages for &#36;3/mo.</description>
+            </tile>   
+        </subtiles>
+    
+    
+        <!-- Mobile Panels -->
+        <homepage>
+            <mobile_images>
+                <image>
+                    <page_url>//www.boostmobile.com/m/shop/plans/monthly-phone-plans/?icamp=INTC_GrowingData_MobileHP_Banner1</page_url>
+                    <image_src>//www.boostmobile.com/_themes/h5bp/images/mobile-panels/growingdata.jpg</image_src>
+                    <mobile>no</mobile>
+                </image>
+                <image>
+                    <page_url>//www.boostmobile.com/shop/phones/apple-iphone/6s/?icamp=INTC_iPhone6s_MobileHP_Banner1</page_url>
+                    <image_src>//www.boostmobile.com/_themes/h5bp/images/mobile-panels/iphonebuy.jpg</image_src>
+                    <mobile>no</mobile>
+                </image>
+                <image>
+                    <page_url>//www.boostmobile.com/shop/phones/lg-g-stylo/?icamp=INTC_LGStyloGWP_MobileHP_Banner3</page_url>
+                    <image_src>//www.boostmobile.com/_themes/h5bp/images/mobile-panels/lggstylo-gwp-hp-mobile.jpg</image_src>
+                    <mobile>yes</mobile>
+                </image>
+                <image>
+                    <page_url>//www.boostmobile.com/m/shop/plans/wifi-hotspots/?icamp=INTC_WiFiHotspots_MobileHP_Banner2</page_url>
+                    <image_src>//www.boostmobile.com/_themes/h5bp/images/mobile-panels/hotspot_mobile.jpg</image_src>
+                    <mobile>no</mobile>
+                </image>
+            </mobile_images>
+        </homepage>
+    
+    </content>
+</page>

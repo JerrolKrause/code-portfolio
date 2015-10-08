@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<payload>
+    
+    <!--
+    # Available banner locations. Add these as attributes to the banner XML node:
+        home, home2, grid, plans, detail, search, accessories, cart, deals  
+    # Promo priority is determined by the node order, promos that are lower in this list will be displayed FIRST
+    # Conflicts are only possible with banners and messages. Banners will automatically trigger rotater code and messages will drop all but the first 2 in this order
+    -->
+    
+    
+    <promos>
+ 
+        <!-- Defaults will be REPLACED by anything in a custom promo -->
+        <defaults imgFolder="/_themes/libs/images/defaults/">
+            <message>
+                <title>FREE SHIPPING.  All the time.</title>
+                <body>Ship to anywhere in the United States free.</body>
+            </message>
+        </defaults>
+        
+        
+        <!--Hotspot Banner-->
+        <promo id="hotspot" active="false" imgFolder="/_themes/libs/images/2015/hotspot/">
+            <banner url="/shop/plans/wifi-hotspots/?icamp=INTC_CHP_Row3_Banner_WifiHotspots" imageName="hotspot_banner.jpg" home="" home2="" grid="" detail="" plans="" accessories="" cart="" deals=""/>
+            <banner url="/shop/plans/wifi-hotspots/" imageName="search.jpg" search="true" sidebar="true"/>
+        </promo> 
+
+	
+        <!--GWP PROMO LG G STYLO -->
+        <promo id="lggstylogwp" active="true" imgFolder="/_themes/libs/images/2015/lggstylogwp/">
+            <banner url="/shop/phones/lg-g-stylo/?icamp=INTC_PrevailLTEGWP_HP_Banner" imageName="lggstylo-gwp-grid.jpg" home="" grid="" detail="" plans="" accessories="" cart="" deals=""/>
+            <deals>
+                <label>Gift with Purchase</label>
+            </deals>					
+            <phones>
+                <payload onSale="" webOnly="" skus="LGLS770ABB">
+                    <message>
+                        <title>FREE CASE WITH PURCHASE</title>
+                        <body>Buy the LG G Stylo<![CDATA[&#8482; &amp;]]> get the LG Quick Circle Folio Case for FREE! $50 value!</body>
+                    </message>
+                    <disclaimer-mini></disclaimer-mini>
+                    <disclaimer-full></disclaimer-full>
+                    <legal><![CDATA[Free case with purchase is limited time only, while supplies last. Offer valid on boostmobile.com or orders placed via the phone from boostmobile.com.<br/><br/>]]></legal>
+                </payload>  
+            </phones>
+        </promo> 
+		
+		
+        <!-- Free Month  -->
+        <promo id="FreeMonth" active="false" imgFolder="/_themes/libs/images/2015/35boostup/">
+            <banner url="/freemonth/" imageName="freemonth.jpg" home="" grid="" detail="" plans="" accessories="" cart="" deals=""/>
+            <deals>
+                <label>Free Month of Service</label>
+            </deals>
+            <phones>
+                <payload onSale="" webOnly="" skus="REC2151ABB,KYS2151ABB,REC390ABB,AL2017BABB,KYS3150ABB,REC272ABB,SS390ABB,SCP6780BBC,KYE4210ABB,LG272ABB">
+                    <message>
+                        <title>FREE month of service on us</title>
+                        <body>Get an account credit up to $35 (new customers only).</body>
+                        <tooltip><![CDATA[ <a href="/freemonth/">Learn more</a> about the Free Month of Service<br>This phone must activate on the $35 Data Boost plan to be eligible.]]></tooltip>
+                    </message>
+                    <genie url="/freemonth/" imageName="genie.png" />
+                    <disclaimer-mini></disclaimer-mini>
+                    <disclaimer-full></disclaimer-full>
+                    <legal><![CDATA[<strong>Offer ends 3/10/15.  Boost reserves the right to modify, extend or cancel offer at any time.</strong><br><br>
+                    <strong>Free Month Offer:</strong> Avail. at participating dealers and boostmobile.com, while supplies last and with new Boost device activated on a new monthly plan. Customer responsible for all recurring charges after free month.  Basic phones must activate on the $35 Data Boost plan to receive credit. <br><br>
+                    <strong>In-store only:</strong> Free month available only at participating dealers and limited to select models. Amount of credit towards first month’s charges varies, dependent on plan and device and does not include cost of add-ons/incremental charges. Excludes taxes. Not combinable with certain other promotions or offers.   <br><br>
+                    <strong>Boostmobile.com only:</strong> Credit amount for monthly service dependent on plan and device  and does not include cost of add-ons and/or incremental charges. Offer limited to purchase of devices ordered online or phone from boostmobile.com. Device must be activated by 3/29/2015, with account credit applied within two weeks after first month's payment. <br><br>
+					Coverage &amp; offers not available everywhere. Offer, prohibited use rules & other restrictions apply. See participating dealer for details. ©2015 Boost Worldwide, Inc. All rights reserved.]]></legal>
+                </payload>  
+                <payload onSale="" webOnly="" skus="RECM830ABB,KYC5120BBB,SPHM830ABB,REC9510ABB,KYC5170ABB,REC1031ABB,REC5215ABB,KYC5215ABB,LGLS620ABB,MOT1031ABB,LGLS660ABB,RECM840ABB,RECN861ABB,ZTE9130ABB,ZTE9510ABB,NOK635ABB,HTC0PCV1ABB,MOT1526BBB,EC730ABB,REC860ABB,LG720ABB,ZTE9100ABB,SPHM840ABB,ZTEN861ABB,KYC6730ABB,SH306SHBBB,ZTE9515ABB,RECC525ABB,REC870ABB,LGLS740ABB,REC9520ABB,RECL710ABB,ZTE9520ABB,LG870ABB,885909833894,885909833931,SPHL710TABB,885909962549,885909962587,885909962624,885909962662,885909962709,885909741694,88590974170,885909741717,885909741670,885909741687,885909727735,885909727711,885909727728,885909950249,885909950294,885909950348,SPHG900BBB,885909950546,88599950591,885909950645,885909970841,885909970896,885909970940,885909950393,885909950447,885909950492,885909971145,885909971190,885909971244,885909970995,885909971046,885909971091">
+                    <message>
+                        <title>FREE month of service on us</title>
+                        <body>Get an account credit up to $55 (new customers only).</body>
+                        <tooltip><![CDATA[ <a href="/freemonth/">Learn more</a> about the Free Month of Service]]></tooltip>
+                    </message>
+                    <genie url="/freemonth/" imageName="genie.png" />
+                    <disclaimer-mini></disclaimer-mini>
+                    <disclaimer-full></disclaimer-full>
+                    <legal><![CDATA[<style>.page-phones .dupe{display:none;}
+					.page-deals .dupe{display:none;}</style> <span class="dupe"><strong>Offer ends 3/10/15.  Boost reserves the right to modify, extend or cancel offer at any time.</strong><br><br>
+                    <strong>Free Month Offer:</strong> Avail. at participating dealers and boostmobile.com, while supplies last and with new Boost device activated on a new monthly plan. Customer responsible for all recurring charges after free month.  Basic phones must activate on the $35 Data Boost plan to receive credit. <br><br>
+                    <strong>In-store only:</strong> Free month available only at participating dealers and limited to select models. Amount of credit towards first month’s charges varies, dependent on plan and device and does not include cost of add-ons/incremental charges. Excludes taxes. Not combinable with certain other promotions or offers.   <br><br>
+                    <strong>Boostmobile.com only:</strong> Credit amount for monthly service dependent on plan and device  and does not include cost of add-ons and/or incremental charges. Offer limited to purchase of devices ordered online or phone from boostmobile.com. Device must be activated by 3/29/2015, with account credit applied within two weeks after first month's payment. <br><br>
+					Coverage &amp; offers not available everywhere. Offer, prohibited use rules & other restrictions apply. See participating dealer for details. ©2015 Boost Worldwide, Inc. All rights reserved.]]></legal>
+                </payload>  
+            </phones>           
+        </promo>
+
+
+        <!-- GS6 -->
+        <promo id="GS6" active="false" imgFolder="/_themes/libs/images/2015/gs6/">
+            <banner url="/shop/phones/samsung-galaxy-s6/" imageName="galaxy-s6-banner.jpg" home="" grid="true" detail="" plans="" accessories="" cart="" deals="true" deals-btm="" />
+        </promo> 
+	
+                	
+        <!-- 30 DataBoost Up -->
+        <promo id="30DataBoostUp" active="false" imgFolder="/_themes/libs/images/2015/30boostup/">
+            <banner url="/shop/plans/30-databoost-up/" imageName="banner2.jpg" home="" grid="" detail="" plans="" accessories="" cart="" deals="" deals-btm="" />
+        </promo> 
+	
+        
+        <!-- CPO -->
+        <promo id="cpo30" active="true" imgFolder="/_themes/libs/images/2014/cpo/">
+            <phones>
+                <payload webOnly="true" skus="cpo"></payload>
+            </phones>
+        </promo>
+		
+                
+        <promo id="genie" active="true" imgFolder="/_themes/libs/images/2015/genie/">
+            <phones>
+                <payload skus="AL7046TABB">
+                    <genie url="/shop/phones/alcatel-onetouch-conquest/" imageName="waterproof.jpg" />
+                </payload>
+            </phones>
+        </promo>        
+        
+        
+        <!-- Gift with purchase Promo -->
+        <promo id="giftWithPurchase" active="false" imgFolder="/_themes/libs/images/2014/giftwithpurchase/">
+            <deals>
+                <label>Gift with Purchase</label>
+            </deals>  
+            <phones>
+                <payload skus="ZTE9520ABB">
+                    <message>
+                        <special>Free Case</special>
+                        <title>Our gift to you</title>
+                        <body>Get a FREE case with purchase!</body>
+                    </message>
+                    <disclaimer-mini></disclaimer-mini>
+                    <disclaimer-full></disclaimer-full>
+                    <legal></legal>
+                </payload>
+                <payload heroDetail="true" heroGrid="true" skus="SPHL710TABB">
+                    <message>
+                        <special>Free Flip Cover</special>
+                        <title>Our gift to you.</title>
+                        <body>Get a Samsung Flip Cover for FREE!</body>
+                        <tooltip><![CDATA[ *Samsung Galaxy S®III free flip cover offer valid while supplies last with purchase of new Samsung Galaxy S® III on boostmobile.com only. Limited time, offer subject to change without notice, restrictions apply.  ]]></tooltip>
+                    </message>
+                    <disclaimer-mini></disclaimer-mini>
+                    <disclaimer-full></disclaimer-full>
+                    <legal>*Samsung Galaxy S®III free flip cover offer valid while supplies last with purchase of new Samsung Galaxy S® III on boostmobile.com only. Limited time, offer subject to change without notice, restrictions apply. </legal>
+                </payload>
+            </phones>
+        </promo>
+        
+
+    </promos>
+</payload>
