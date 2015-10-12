@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<page> 
+  <server>{{queryString}}</server>
+  <!--
+  TEMPLATES
+  -->
+  <templates>
+      <layout>faqs</layout>
+  </templates>
+  
+  <!--
+  HEADER
+  -->
+  <header> 
+    <title>Daily Plans FAQs | Plans &amp; Services FAQs</title>
+    <metaDescription>Are you experiencing issues with your Boost cell phone? Do you have questions about your cell phone plan? See our FAQ page to get answers.</metaDescription>
+    <metaKeywords>faq, customer support, boost mobile customer support</metaKeywords>
+
+    <!-- Analytics Tagging -->
+    <analytics>
+        <omniture>
+            <pagename>Daily Plans</pagename>
+            <channel>Support</channel>
+            <prop21>Daily Plans</prop21>
+        </omniture>  
+    </analytics>
+  </header>
+  
+  <!-- 
+  MAIN CONTENT
+  -->
+  <content>
+      <faqs>
+          <title>Daily Plans</title>
+          <faq>
+              <question><![CDATA[What's not included in the Daily Unlimited plans?]]></question>
+              <answer><![CDATA[ <p>Additional services such as digital purchases (e.g., ringtones, games, wallpapers), international calls/messaging, incidentals and premium messaging services (e.g., games) are not included in the &#36;2/&#36;3 Daily Unlimited plan and will incur additional charges. <a href="/shop/plans/daily-unlimited/2/">Click here</a> for details on what is included in the &#36;2/&#36;3 Daily Unlimited plan.</p> ]]></answer>    
+          </faq>
+          <faq>
+              <question><![CDATA[What happens if I miss my daily payment?]]></question>
+              <answer><![CDATA[ <p>If you miss your daily payment, your service will be interrupted until you add enough money to your account to cover your daily payment amount. Once you have added enough money to your account to cover your daily payment amount, your service will be restored.</p> ]]></answer>    
+          </faq>
+          <faq>
+              <question><![CDATA[What happens if my account balance goes to &#36;0 in the middle of the day?]]></question>
+              <answer><![CDATA[ <p>If your account balance reaches zero, but you've already paid your daily payment amount, you will still be able to use the services included in your plan. However, you will not be able to pay for and use additional services not included (e.g., international calls). Please add extra money to your account to pay for these additional services. </p>
+<p>From the time your account balance reaches &#36;0, you will have 60 days to add money to your account or your account will be canceled and you will lose your personal telephone number.</p> ]]></answer>    
+          </faq>
+          <faq>
+              <question><![CDATA[What happens if I do not have enough money to cover my daily subscription?]]></question>
+              <answer><![CDATA[ <p>If you don't have enough money to cover your daily subscription fee, your services will be interrupted until you add enough money to your account to cover your daily subscription fee.</p> ]]></answer>    
+          </faq>
+          <faq>
+              <question><![CDATA[What if I did not have enough money to cover my daily subscription, and I add money in the middle of the day?]]></question>
+              <answer><![CDATA[ <p>If you add money in the middle of a day on a day when your daily subscription has not already been paid, you will be charged the subscription fee and will receive the Daily Unlimited plan benefits for the remainder of that day (until 12:00 am based on your time zone). At 12:01 am (based on your time zone), you will be charged the daily rate for the next day.</p> ]]></answer>    
+          </faq>
+          <faq>
+              <question><![CDATA[What if I do not add money to my account?]]></question>
+              <answer><![CDATA[ <p>If you do not add money to your account at least once every 90 days, you will lose any balance on your account and your services will be interrupted. Anytime you reach a &#36;0 balance, you have 60 days to add money to your account before your account is canceled.</p> ]]></answer>    
+          </faq>
+      </faqs>
+      
+  </content>
+</page>
