@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<page> 
+    
+    <!--
+    TEMPLATES
+    -->
+    <templates>
+        <layout>search</layout>
+    </templates>
+  
+    <!--
+    HEADER
+    -->
+    <header> 
+        <title>Search</title>
+        <metaDescription>Search the Boost Mobile Website</metaDescription>
+        <metaKeywords></metaKeywords>
+        <metaImage></metaImage>
+
+        <!-- CSS Files -->
+        <stylesheets>
+            <file>
+                <link>/shop/_css/style.css</link>
+            </file>
+            <file>
+                <link>/search/search.css</link>
+            </file>
+        </stylesheets>
+    
+        <!-- Javascript -->
+        <scripts>
+            <!-- Files -->
+            <file>
+                <link type="async">/_themes/libs/js/jquery.quicksearch.min.js</link>
+            </file>
+            <file>
+                <link type="async">/search/search.js</link>
+            </file>
+         
+        </scripts>
+    
+        <!-- Analytics Tagging -->
+        <analytics>
+            <!-- Custom omniture tags have been added in search.js -->
+            <omniture custom="true">
+                <pagename>Search > Search Results</pagename>
+                <channel>Search</channel>
+                <prop21>Search</prop21>
+            </omniture>  
+        </analytics>
+    
+    </header>
+     
+    <!-- 
+    MAIN CONTENT
+    --> 
+    <content>
+        <banners>
+            <banner url="/shop/plans/monthly-phone-plans/?icamp=INTC_GrowingData_Search_Banner1" imageName="/search/images/growingdata.jpg" />
+            <banner url="/shop/phones/apple-iphone/6s/?icamp=INTC_iPhone6s_Search_Banner2" imageName="/search/images/iphone6s.jpg" />
+            <banner url="/shop/plans/wifi-hotspots/?icamp=INTC_WiFiHotspots_Search_Banner3" imageName="/search/images/hotspot_search.jpg" />
+            <banner url="/shop/phones/lg-g-stylo/?icamp=INTC_LGStyloGWP_Search_Banner4" imageName="/search/images/lggstylo-gwp-search.jpg" />
+        </banners>
+    </content>
+</page>
