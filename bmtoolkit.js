@@ -1,6 +1,4 @@
-//THIS FILE IS FOR DEMONSTATION PURPOSES AND HAS HAD ALL DOMAIN SPECIFIC OR SENSITIVE CODE SANITIZED
-
-/* 
+/*  
  * This application is a dynamic resource loader which is used to insert 3rd party resources in our environments
  * The code in this file needs to work on a variety of environments including some poorly developed ones without breaking anything. 
  * That requirement dictated some overdevelopment and additional error proofing that wouldn't ordinarily be required
@@ -27,7 +25,7 @@ window.bmToolkit = (function() {
 
     //Staging vars - Use to override current page for testing. Uncomment to override.
     //bmToolkit.vars.domain = 'apps.boostmobile.com';
-    //bmToolkit.vars.pathName = '/boostApp/confirmationDisplay.do123';
+    //bmToolkit.vars.pathName = '/boostApp/confirmationDisplay.do';
 
 
     /**
@@ -38,34 +36,34 @@ window.bmToolkit = (function() {
      */
     var domains = {
         www: {
-            domains: ['localhost:8080', 'devsite.boostmobile.com', 'testsite.boostmobile.com', 'www.boostmobile.com'],
+            domains: ['localhost:8080', '##REMOVED##', '##REMOVED##', '##REMOVED##', '##REMOVED##', 'www.boostmobile.com'],
             prodDomain: 'www.boostmobile.com',
             devResourceUrl: bmToolkit.vars.domain
         },
         checkout: {
             domains: ['checkout.booststaging.com', 'checkout.boostmobile.com'],
             prodDomain: 'checkout.boostmobile.com',
-            devResourceUrl: 'devsite.boostmobile.com' //Using RTB instead of test because test doesn't have a valid SSL Cert
+            devResourceUrl: '##REMOVED##' //Using RTB instead of test because test doesn't have a valid SSL Cert
         },
         espanol: {
             domains: ['espanol.boostmobile.com'],
             prodDomain: 'espanol.boostmobile.com',
-            devResourceUrl: 'testsite.boostmobile.com'
+            devResourceUrl: '##REMOVED##'
         },
         myaccount: {
             domains: ['myaccount.boostmobile.com'],
             prodDomain: 'myaccount.boostmobile.com',
-            devResourceUrl: 'testsite.boostmobile.com'
+            devResourceUrl: '##REMOVED##'
         },
         apps: {
             domains: ['apps.boostmobile.com'],
             prodDomain: 'apps.boostmobile.com',
-            devResourceUrl: 'testsite.boostmobile.com'
+            devResourceUrl: '##REMOVED##'
         },
         devicehelp: {
             domains: ['devicehelp.boostmobile.com'],
             prodDomain: 'devicehelp.boostmobile.com',
-            devResourceUrl: 'testsite.boostmobile.com'
+            devResourceUrl: '##REMOVED##'
         }
     };
 
@@ -241,7 +239,7 @@ window.bmToolkit = (function() {
         var resource = document.createElement('script');
         resource.type = 'text/javascript';
         resource.async = true;
-        resource.src = '//www.google.com/cse/cse.js?';
+        resource.src = '//www.google.com/cse/cse.js?cx=017156821116155704347:e0grp0gsys4';
         bmToolkit.resources.store(resource);
 
     };//end domains.www
@@ -309,7 +307,7 @@ window.bmToolkit = (function() {
         var resource = document.createElement('script');
         resource.type = 'text/javascript';
         resource.async = true;
-        resource.src = '//www.google.com/cse/cse.js';
+        resource.src = '//www.google.com/cse/cse.js?cx=017156821116155704347:9vyxq0md_-e';
         bmToolkit.resources.store(resource);
     };//end domains.espanol
 
@@ -336,8 +334,8 @@ window.bmToolkit = (function() {
             case '/boostApp/accountLogin.do':
                 bmToolkit.resources.floodlightTag('163');
                 try {
-                    window.google_conversion_id = 123456789;
-                    window.google_conversion_label = "qwerty";
+                    window.google_conversion_id = 963322233;
+                    window.google_conversion_label = "Xf4WCI_lxQkQ-cKsywM";
                     window.google_custom_params = window.google_tag_params;
                     window.google_remarketing_only = true;
                 } catch (err) {
@@ -348,8 +346,9 @@ window.bmToolkit = (function() {
                 rvGoogle.src = '//www.googleadservices.com/pagead/conversion.js';
                 bmToolkit.resources.store(rvGoogle);
 
+                //<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/963322233/?value=1.00&amp;label=Xf4WCI_lxQkQ-cKsywM&amp;guid=ON&amp;script=0"/>
                 var rvGoogleImg = document.createElement('img');
-                rvGoogleImg.src = '//googleads.g.doubleclick.net/pagead/viewthroughconversion/';
+                rvGoogleImg.src = '//googleads.g.doubleclick.net/pagead/viewthroughconversion/963322233/?value=1.00&label=Xf4WCI_lxQkQ-cKsywM&guid=ON&script=0';
                 rvGoogleImg.height = '0px';
                 rvGoogleImg.width = '0px';
                 bmToolkit.resources.store(rvGoogleImg);
@@ -425,7 +424,7 @@ window.bmToolkit = (function() {
             var brightcove = document.createElement('script');
             brightcove.type = 'text/javascript';
             brightcove.async = true;
-            brightcove.src = '//s.btstatic.com/tag.js';
+            brightcove.src = '//s.btstatic.com/tag.js#site=lCgfimK';
             bmToolkit.resources.store(brightcove);
 
             var resource = document.createElement('script');
@@ -438,7 +437,7 @@ window.bmToolkit = (function() {
             var dtm = document.createElement('script');
             dtm.type = 'text/javascript';
             dtm.async = true;
-            dtm.src = '//assets.adobedtm.com/';
+            dtm.src = '//assets.adobedtm.com/058f84f4e7e71054c64df8cf68552abe037a02d8/satelliteLib-5061fba463dc51d188e5dfc6d60bc8fde062036c.js';
             //Adobe DTM needs a callback function. Wrapped in try catch in event of async execution issues
             dtm.onload = dtm.onreadystatechange = function() {
                 try {
