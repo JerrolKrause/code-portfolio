@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<page>
+    <server>{{queryString}}</server>
+
+    <!--
+    TEMPLATES
+    -->
+    <templates>
+        <layout>page-phone-features-specs</layout>
+    </templates>
+    
+    <!--
+    HEADER 
+    --> 
+    <header>
+        <title>Samsung Galaxy S6 Android Phone Specs</title>
+        <metaDescription>Discover the Samsung Galaxy S6 Android phone and purchase online now. The Samsung Galaxy S6 is available with an unlimited, prepaid, no contract plan from Boost Mobile.</metaDescription>
+        <metaKeywords>samsung galaxy s6 specs, cell phone, prepaid, no contract, samsung galaxy s6</metaKeywords>
+
+        <!-- Analytics Tagging -->
+        <analytics>
+            <omniture custom="true">
+                <pagename>Samsung Galaxy S&#174; 6 - Features/Specs</pagename>
+                <channel>Shop Phones</channel>
+                <prop21>Samsung Galaxy S&#174; 6 - Features/Specs</prop21>
+            </omniture>
+        </analytics>
+    </header>
+      
+    <!-- Product Info -->  
+    <product id="SPHG92032ABB">
+        <attributes type="android" brand="samsung" slug="samsung-galaxy-s6" url="/shop/phones/samsung-galaxy-s6/" date-launch="20150409" genie-order="100"/>
+        <options preorder="" new="" hero="" eol="" cpo="" in-store="true"/>    
+        <names>
+            <brand>Samsung</brand>
+            <name>Galaxy S<![CDATA[<sup class="rm">&#174;</sup>]]> 6</name>            
+            <brandraw>Samsung</brandraw><!-- No Marks -->         
+            <nameraw>Galaxy S 6</nameraw><!-- No Marks -->
+        </names>
+        <descriptions>
+            <list-description>Meet the reimagined Samsung Galaxy S<![CDATA[<sup class="rm">&#174;</sup>]]> 6. Featuring an incredibly fast octa-core processor, Android<![CDATA[&#8482;]]> 5.1 and a 5.1" super AMOLED<![CDATA[&#8482;]]> display, the Galaxy S 6 has it all. Its innovative dual-edge display features stunning metal and sophisticated glass - so it's got toughness as well as good looks.</list-description>
+            <list-extended>Meet the reimagined Samsung Galaxy S 6. Featuring an incredibly fast octa-core processor, Android 5.1 and a 5.1" super AMOLED display, the Galaxy S 6 has it all. Its innovative dual-edge display features stunning metal and sophisticated glass - so it's got toughness as well as good looks. The Samsung Exynos 7420 Octa-Core 64-bit processor allows for jaw-dropping graphics and lightning-quick switching between apps. Enjoy bright images and full HD video on the go with this crisp 5.1" Quad HD Super AMOLED screen and rich color display. Capture crystal-clear photos and videos every time with the 16MP rear-facing and 5MP front-facing cameras with auto real-time HDR. Enjoy the speed and simplicity of the powerful Android 5.1 (Lollipop) operating system. Get up to 23 hours of talk time from the 2550 mAh long-lasting lithium-ion battery. Charge wirelessly with an optional wireless charging pad (sold separately). Keep your favorite music, videos and important files at your fingertips with 32GB of onboard memory. Switch seamlessly between Sprint's nationwide 3G and 4G LTE networks and the all-new Enhanced LTE network, where available.</list-extended>
+        </descriptions>
+        <filters bar="true" slider="false" flip="false" touchscreen="true" qwerty="false" camera="true" frontfacingcamera="true" gps="true" music="true" 
+                 wifi="true" bluetooth="true" threeG="true" fourGlte="true" fourGwimax="false" text="true" video="true" hotspot="true" email="true" htmlwebbrowser="true" ulecertified="false" speakerphone="true"/>
+        <gallery-images>
+            <item galleryType="image" view="front" order="1"></item>
+            <item galleryType="image" view="left" order="2"></item>
+            <item galleryType="image" view="side" order="3"></item>
+            <item galleryType="image" view="back" order="4"></item>
+            <item galleryType="video" view="front" order="5" id="IAJjAutLlKE"></item>
+        </gallery-images>
+        
+        <features> 
+            <feature icon="s5-android"> 
+                <title><![CDATA[Android&trade; 5.1 (Lollipop)]]></title> 
+                <description><![CDATA[Fast, customizable, smooth. Enjoy the speed and simplicity of the powerful Android operating system. ]]></description> 
+            </feature> 
+            <feature icon="s5-display"> 
+                <title><![CDATA[5.1" Quad HD Super AMOLED&trade; Display]]></title> 
+                <description><![CDATA[Enjoy bright images and full HD video on the go with this crisp screen and rich color display.]]></description> 
+            </feature> 
+            <feature icon="processor"> 
+                <title><![CDATA[Samsung Exynos&reg; 7420 Octa-Core 64-bit Processor ]]></title> 
+                <description><![CDATA[The Samsung Exynos&reg; processor allows for jaw-dropping graphics and lightning-quick switching between apps.]]></description> 
+            </feature> 
+            <feature icon="camera"> 
+                <title><![CDATA[16MP Rear-Facing Camera/5MP Front-Facing Camera with Auto HDR]]></title> 
+                <description><![CDATA[Capture crystal-clear photos and videos every time w/ the 16MP rear-facing and 5MP front-facing cameras with auto real-time HDR.]]></description> 
+            </feature> 
+            <feature icon="3g"> 
+                <title><![CDATA[3G/4G LTE/Enhanced LTE<sup>&#8224;</sup>]]></title> 
+                <description><![CDATA[Switch seamlessly between Sprint's nationwide 3G and 4G LTE networks and the all-new Enhanced LTE network, where available. <a href="/coverage/" style="color:#E7781D">Check coverage</a>.]]></description> 
+            </feature> 
+            <feature icon="s5-s-health"> 
+                <title><![CDATA[32GB ROM/3GB RAM Memory<sup>&#8224;&#8224;</sup>]]></title> 
+                <description><![CDATA[Keep your favorite music, videos and important files at your fingertips with 32GB of onboard memory. ]]></description> 
+            </feature> 
+            <feature icon="battery"> 
+                <title><![CDATA[2550 mAh Battery with Wireless Charging Capability]]></title> 
+                <description><![CDATA[Get up to 23 hours of talk time from this long-lasting lithium-ion battery.<sup>&#8224;&#8224;&#8224;</sup> Charge wirelessly with an optional wireless charging pad (sold separately).]]></description> 
+            </feature> 
+            <feature icon="mobile-hotspot-capable"> 
+                <title><![CDATA[Mobile Hotspot Capable]]></title> 
+                <description><![CDATA[Turn your phone into a Wi-Fi&#174; hotspot for as low as &#36;5/mo. <a href="/shop/plans/mobile-hotspot/">Learn more.</a>]]></description> 
+            </feature>
+            
+            <list> 
+                <item><![CDATA[3-way calling]]></item> 
+                <item><![CDATA[3.5mm headset jack]]></item> 
+                <item><![CDATA[Audio Recorder]]></item> 
+                <item><![CDATA[Calendar]]></item> 
+                <item><![CDATA[Call waiting]]></item> 
+                <item><![CDATA[Caller ID]]></item> 
+                <item><![CDATA[FM Radio (Next Radio)]]></item> 
+                <item><![CDATA[Multi language settings]]></item> 
+                <item><![CDATA[Milk Music&trade; ]]></item> 
+                <item><![CDATA[Milk Video]]></item> 
+                <item><![CDATA[Nationwide Sprint&#174; 3G Network and Nationwide Sprint&#174; 4G LTE Network]]></item> 
+                <item><![CDATA[Picture and video sharing]]></item> 
+                <item><![CDATA[Portrait to Landscape auto-rotate]]></item> 
+                <item><![CDATA[S Health]]></item> 
+                <item><![CDATA[S Finder]]></item> 
+                <item><![CDATA[Speakerphone]]></item> 
+                <item><![CDATA[Stereo Bluetooth&#174;]]></item> 
+                <item><![CDATA[TTY mode]]></item> 
+                <item><![CDATA[Vibrate mode]]></item> 
+                <item><![CDATA[Virtual QWERTY keyboard]]></item> 
+                <item><![CDATA[Voicemail]]></item> 
+                <item><![CDATA[Wi-Fi<sup>&#174;</sup> enabled]]></item> 
+            </list> 
+        </features> 
+        <compare> 
+            <item id="os"><![CDATA[Android&#8482; 5.1 (Lollipop)]]></item> 
+            <item id="display"><![CDATA[5.1" Quad HD Super AMOLED&reg; display]]></item> 
+            <item id="camera"><![CDATA[16MP camera w/ 5MP front-facing camera]]></item> 
+            <item id="wifi"><![CDATA[true]]></item> 
+            <item id="4g"><![CDATA[Tri-Mode 3G/4G LTE/Enhanced LTE]]></item> 
+            <item id="hotspot"><![CDATA[true]]></item> 
+            <item id="qwerty-keyboard"><![CDATA[Virtual]]></item> 
+            <item id="web-browser"><![CDATA[HTML]]></item> 
+            <item id="email"><![CDATA[Gmail<sup>&#174;</sup>, MSN<sup>&#174;</sup>, Yahoo<sup>&#174;</sup>, Hotmail<sup>&#174;</sup>, Microsoft<sup>&#174;</sup> Exchange Active Sync<sup>&#174;</sup>]]></item> 
+            <item id="video"><![CDATA[true]]></item> 
+            <item id="music-player"><![CDATA[Android&#8482; Music Player]]></item> 
+            <item id="gps"><![CDATA[true]]></item> 
+            <item id="speakerphone"><![CDATA[true]]></item> 
+            <item id="memory"><![CDATA[3 GB RAM / 32 GB ROM]]></item> 
+            <item id="processor"><![CDATA[Quad 2.1GHz + Quad 1.5Ghz, Octacore processor, Samsung Exynos&reg;]]></item> 
+            <item id="calendar"><![CDATA[true]]></item> 
+            <item id="visual-voicemail"><![CDATA[true]]></item> 
+            <item id="3g"><![CDATA[true]]></item> 
+            <item id="bluetooth"><![CDATA[Stereo]]></item> 
+        </compare>
+
+        <tech-specs>
+            <os><![CDATA[Android&#8482; 5.1]]></os>
+            <group id="dimensions" order="1" thumb="/_img/beyond_talk/dimensions/lg-volt.png">
+                <specs>
+                    <spec order="1" type="height"><![CDATA[5.65"]]></spec>
+                    <spec order="2" type="depth"><![CDATA[0.27"]]></spec>
+                    <spec order="3" type="width"><![CDATA[2.78"]]></spec>
+                    <spec order="4" type="weight"><![CDATA[4.87 oz]]></spec>
+                    <spec order="5" type="screen_size"><![CDATA[5.1" Quad HD Super AMOLED&reg; display]]></spec>
+                </specs>
+            </group>
+            <group id="battery" order="2">
+                <specs>
+                    <spec order="1" type="talking_time"><![CDATA[23 hrs]]></spec>
+                    <spec order="2" type="battery_type"><![CDATA[2550 mAh Li-Ion Battery]]></spec>
+                    <spec order="3" type="removable"><![CDATA[No]]></spec>
+                    <spec order="4" type="memory"><![CDATA[3 GB RAM / 32 GB ROM]]></spec>					
+                    <spec order="5" type="processor"><![CDATA[Quad 2.1GHz + Quad 1.5Ghz, Octacore processor, Samsung Exynos&reg;]]></spec>
+                </specs>
+            </group>
+            <group id="whats_included" order="3">
+                <specs>
+                    <spec order="1" type="regular"><![CDATA[Samsung Galaxy S&reg; 6 Handset]]></spec>
+                    <spec order="2" type="regular"><![CDATA[USB 2.0 Cable]]></spec>
+                    <spec order="3" type="regular"><![CDATA[Charger]]></spec>
+                    <spec order="4" type="regular"><![CDATA[Printed materials]]></spec>                    
+                </specs>
+            </group>
+        </tech-specs>
+        
+        <plans> 
+            <plan id="plan02"/>
+            <plan link="/shop/plans/daily-unlimited/3/"/>
+        </plans>
+        
+        <shrinkage>
+            <title><![CDATA[As low as <b><sup>$</sup>40</b>]]></title>
+            <description><![CDATA[All Monthly Unlimited plans include Shrinking Payments. Shrinking Payments reduces your monthly payment by $5/month for every six on-time payments, up to $15/month in total.]]></description>
+        </shrinkage>
+        
+        <accessories>
+            <accessory>43859705948</accessory>
+            <accessory>660543373391</accessory>
+            <accessory>660543374763</accessory>
+            <accessory>846127166775</accessory>
+            <accessory>887276060958</accessory>
+        </accessories>
+        
+        <legal>
+            <disclaimer-mini>Limit 2 phones per customer.</disclaimer-mini>
+            <disclaimer-full>Promotional pricing available only for select phones directly from boostmobile.com. Limited time only, while supplies last. Android<![CDATA[&#8482;]]> is a trademark of Google, Inc.</disclaimer-full>
+            <footer-legal><![CDATA[<p><sup>&#134;</sup>Visit <a href="https://www.boostmobile.com/enhancedLTE">www.boostmobile.com/enhancedLTE</a> for more details</p>
+                        <p> <sup>&#134;&#134;</sup>Portion of memory used by existing content. </p>
+			<p><sup>&#134;&#134;&#134;</sup>Battery life varies by use, configuration, and many other factors; actual results will vary.
+			<p>&copy;2015 Samsung Electronics America, Inc. Samsung, Galaxy S, Samsung Exynos, Super AMOLED, Milk Music and The Next Big Thing Is Here are all trademarks of Samsung Electronics Co., Ltd. </p>
+			<!--<p><sup>&#134;&#134;&#134;</sup>All talk and standby times are approximate. Battery performance depends on network configuration, signal strength, operating temperature, features selected, and voice, data and other applications usage patterns.</p>-->
+	    ]]></footer-legal>
+        </legal>
+        
+        <tracking>
+            <upc>887276062174</upc>
+        </tracking>
+    </product>
+</page>
