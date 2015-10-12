@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>     
+<page>
+    <server>{{queryString}}</server>
+    <!--
+    TEMPLATES 
+    -->
+    <templates>
+        <layout>stores</layout>
+    </templates>
+    <!--
+    HEADER 
+    -->
+    <header>
+        <title>Boost Mobile Locations - Boost Mobile Store Locator</title>
+        <metaDescription>Find the closest Boost Mobile location with our store locator. Head to the nearest Boost Mobile store location, or start shopping for prepaid and no contract cell phones online at boostmobile.com.</metaDescription>
+        <metaKeywords>boost mobile locations, boost mobile store locations, boost mobile store locator</metaKeywords>
+	<!-- CSS -->	
+        <stylesheets>
+            <file>
+                <link>/stores/stores.css</link>
+            </file>
+        </stylesheets>
+        <!-- Javascript -->
+        <scripts>
+            <file>
+                <link type="blocking">//maps.google.com/maps/api/js?sensor=false&amp;language=en</link>
+                <callback><![CDATA[]]></callback>
+            </file>   
+            <file>
+                <link type="async">/_themes/libs/js/gmap3.min.js</link>
+                <callback><![CDATA[]]></callback>
+            </file>
+            <file>
+                <link type="async">/stores/stores.js</link>
+                <callback><![CDATA[]]></callback>
+            </file>
+            
+            <file>
+                <link type="async">/_themes/libs/js/jquery.qtip-1.0.0-rc3.min.js</link>
+                <callback><![CDATA[
+                           //Default tooltips
+                            jQuery('#locatorFormOptions label').qtip();
+                            jQuery('.tooltip').each(function() {
+                                var self = jQuery(this);
+                                self.qtip({
+                                    content: self.html(),
+                                    hide: {
+                                        fixed: true,
+                                        delay: 250
+                                    }
+                                });
+                            });
+               ]]></callback>
+            </file>
+        </scripts>
+        <!-- Analytics Tagging -->
+        <analytics>
+            <omniture custom="true">
+                <pagename>Store Locator > Store Locator Results</pagename>
+                <channel>Store Locator</channel>
+                <prop21>Store Locator > Store Locator Results</prop21>
+            </omniture>
+        </analytics>
+    </header>
+    <!-- MAIN CONTENT -->
+    <content>
+        <title>Store Locator</title>
+        <breadcrumbs><![CDATA[<a href="/">Home</a> &gt; Store Locator]]></breadcrumbs>
+        <!--
+        List all static banners here, they will be rotated through automatically
+        To have a contextual banner in the top slot that displays for a specific door type, add an id attrivute that matches the value in the query string
+        If no ID, it will default to the first available <top> node banner in this list
+        <top imgSrc="/stores/images/instoreoffers_storeloc.jpg" href="/in-store-offers/" id="best-buy"/>   
+        -->
+        <banners>
+            <top imgSrc="/stores/images/instoreoffers_storeloc.jpg" href="/in-store-offers/?icamp=INTC_Instoredeals_Store Locator" />   
+            <top imgSrc="/stores/images/best-buy.jpg"  id="best-buy"/>   
+            <retailers imgSrc="/stores/images/boost-mobile-retailers.png" href="" />
+            <reboost imgSrc="/stores/images/reboost-retailers.png" href="" />
+            <bottom imgSrc="/_themes/libs/images/2013/override/gen_cpo.jpg" href="/shop/phones/#/sort_data-position_asc/filter_cpo/?icamp=INTC_Generic CPO_Store Locator Bottom_storelocatorbottom" />
+        </banners>
+        <locator api-url="##REMOVED##" show-featured="true"></locator>
+    </content>
+</page>
