@@ -19,9 +19,9 @@
 <xsl:output method="html" encoding="utf-8" indent="yes" />
 
 <!-- Masterpage Includes -->
-<xsl:include href="/../constants.xsl"/>
+<xsl:include href="##REMOVED##"/>
 <xsl:variable name="products-feed" select="document($products)/payload/products"/>
-<xsl:variable name="available-phones-pricing" select="document('http://www.boostmobile.com/__vendors/brightpoint/prod/pricing.xml')/payload/products" />
+<xsl:variable name="available-phones-pricing" select="document('##REMOVED##')/payload/products" />
      
 
     <!-- Core Template -->
