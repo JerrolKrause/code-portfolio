@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--   
+    Document   : Production inventory override file
+    Created on : Dec 12 2013
+    Author     : Jerrol Krause
+    Description:
+        The purpose of this file is for temporary hotfixes to inventory levels that need to happen quicker than the 4-6 hour alfresco release. Changes in this file will override production values.
+        THIS IS FOR URGENT HOTFIXES ONLY AND SHOULD NOT BE FOR REGULAR USE OR LONG TERM CHANGES. 
+-->
+<payload>
+    <phones>
+        <!-- 
+        #### Phone Options ####
+        @id - IMM SKU of phone
+        @oos-override - Force the phone out of stock. Set to true to force OOS.
+        @oos-threshold - Custom threshold to set to make a phone go automatically out of stock. Can be set to negative to force a phone IN STOCK. Needs to be a number.
+        @default-id - Must go on the master variation ID. Allows you to override the default sku for phones with variations
+        @map - override the default map value
+        
+        ## Code Sample ##
+        <phone id="SPHL710ABB" oos-override="true" oos-threshold="3000" default-id="885909950546" map="610" />
+        -->
+
+        <phone id="885909741670" default-id="885909962549"/>
+        <phone id="885909727711"  oos-threshold="50"/>
+        <phone id="885909741700"  oos-threshold="60"/>
+        <phone id="885909741717"  oos-threshold="200"/>
+        <phone id="885909741687"  oos-threshold="40"/>
+        <phone id="SPHG92032ABB"  oos-threshold="30"/>
+        <phone id="HTC0PCV1ABB"  oos-threshold="100" map="48"/>
+        <phone id="REC9520ABB"  oos-threshold="30"/>
+        <phone id="LG720ABB"  oos-threshold="100"/>
+        <phone id="RECL710ABB"  oos-threshold="100"/>
+        <phone id="LG870ABB"  oos-threshold="1000"/>
+        <phone id="ZTEN861ABB"  oos-threshold="1000"/>
+        <phone id="SS390ABB"  oos-threshold="20"/>
+        <phone id="KYE4210ABB"  oos-threshold="10"/>
+        <phone id="KYC5120BBB"  oos-threshold="200"/>
+        <phone id="ZTE9100ABB"  oos-threshold="200"/>
+        <phone id="LG272ABB"  oos-threshold="2200"/>
+        <phone id="KYC5170ABB"  oos-threshold="600"/>
+        <phone id="REC390ABB"  oos-threshold="20"/>
+	<phone id="NOK635ABB"  oos-threshold="2000"/>
+        <phone id="NOK6351ABB" oos-threshold="20" map="48"/>
+        <phone id="LGLS770ABB"  oos-threshold="125"/>
+        <phone id="LGLS740ABB"  oos-threshold="20"/>
+        <phone id="LGLS620ABB"  oos-threshold="25"/>
+        <phone id="ZTE9520ABB"  oos-threshold="300"/>
+        <phone id="MOT1031ABB"  map="0" oos-threshold="50"/>
+        <phone id="REC860ABB"  oos-threshold="20"/>
+        <phone id="ZTE9515ABB"  oos-threshold="25"/>
+        <phone id="SPHL710TBBB"  oos-threshold="50"/>
+        <phone id="SPHL720TBBB"  oos-threshold="25"/>
+        <phone id="888462500753"  oos-threshold="2000"/>
+        <phone id="SPHL720TABB" oos-threshold="25"/>
+        <phone id="SPHL710TABB" oos-threshold="50"/>
+        <phone id="888462500739" oos-threshold="2000"/>
+        <phone id="ZTE9130ABB" oos-threshold="2000"/>
+        
+    </phones>
+</payload>
