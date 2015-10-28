@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<page> 
+    
+    <!--
+    TEMPLATES
+    -->
+    <templates>
+        <layout>mobile</layout>
+    </templates>
+  
+    <!--
+    HEADER
+    -->
+    <header> 
+        <title>Free Month</title>
+        <metaDescription>Choose Boost Mobile! We're giving an account credit up to $55 - that's one month of FREE service - to new customers who buy a phone and activate on a Data Boost plan. </metaDescription>
+        <metaKeywords>Databoost</metaKeywords>
+    
+        <!-- Analytics Tagging -->
+        <analytics>
+            <omniture>
+                <pagename>FreeMonth</pagename>
+                <channel>Mobile</channel>
+                <prop21>FreeMonth</prop21>
+            </omniture>  
+        </analytics>
+    </header>
+  
+    <!-- 
+    MAIN CONTENT
+    -->
+    <content>
+      
+        <!-- CONTENT -->
+        <main><![CDATA[ 
+ 
+        <!-- On page css because this is a completely standalone page -->    
+        <style>
+            h2{color:#000;}
+            h2 span{color:#fff;font-size:14px;}
+            h3{color:#000;margin-bottom:10px;}
+            td{width:50%;text-align:center;font-weight:bold;font-size:12px;}
+            #terms{color:#666;}
+            #colorbox #termsblock{display:block;}
+
+            #data-box{}
+                #data-box{background-color:#fff;color:#000;margin-left:10px;margin-right:10px;}
+                #data-box ol{margin:0px;padding:0px;list-style:none;margin-bottom:20px;}
+                #data-box li{margin:0px;padding:0px;margin-bottom:7px;padding-left:35px;position:relative;}
+                #data-box .num{background-color:#e7781d;text-align:center;width:20px;padding-top:3px;padding-bottom:3px;color:#fff;position:absolute;left:0;font-size:12px;}
+
+            .button{display:block;background-color:#e7781d;text-align:center;padding-top:3px;padding-bottom:3px;color:#fff;font-size:17px;line-height:25px;margin-top:1em;}
+                .sm{font-size:9px;}
+        </style>
+
+            
+        <div class="content" style="padding-bottom:0px;">
+            <a href="/shop/"><img src="/m/img/lp/FreeMonth__Mobile.jpg" alt="Big data, small price. All new data plans."/></a>
+        </div>
+            
+        <div class="content" id="data-box">
+
+            <h2>What do I need to do?</h2>
+            <p><strong>Choose Boost Mobile!</strong> We're giving an account credit up to $55 - that's one month of <strong>FREE</strong> service - to new customers who buy a phone and activate on any Data Boost plan; up to $55 for <a href="/shop/phones/#/sort_data-position_asc/filter_android/">smartphones</a>  or up to $35 for <a href="/shop/phones/#/sort_data-position_asc/filter_feature/">basic phones</a>.  This limited-time offer is available online and at select stores.</p>
+            <a class="learnmore" href="http://mobile.boostmobile.com/mt/www.boostmobile.com/shop/phones/">Shop Phones</a>
+
+            <hr/>
+            <h2>How do I get my credit online?</h2>
+            <ol>
+                <li><div class="num">1</div>Buy a phone at boostmobile.com by 3/10/2015.</li>
+                <li><div class="num">2</div>Activate your phone by signing up for a Data Boost plan and paying your full monthly charge by 3/29/2015. Note: <a href="/shop/phones/#/sort_data-position_asc/filter_feature/">Basic phones</a>  must activate on the $35 Data Boost plan to receive credit.  </li>
+                <li><div class="num">3</div>Receive a credit up to $55 on your account within two weeks of activation.</li>
+            </ol>        
+
+            <hr/>
+            <h2>How do I get my credit in store?</h2>
+            <ol>
+                <li><div class="num">1</div>Buy a phone at a participating retailer by 3/10/2015.</li>
+                <li><div class="num">2</div>Activate your phone by signing up for a Data Boost plan. Note: <a href="/shop/phones/#/sort_data-position_asc/filter_feature/">Basic phones</a>  must activate on the $35 Data Boost plan to receive credit. </li>
+                <li><div class="num">3</div>Receive an instant credit up to $55 on your account for your first month of service.<br/>
+                    <span class="sm">*This offer cannot be combined with the $100 port-in credit.</span></li>
+            </ol>
+
+            <hr/>
+            <h2>Which phones qualify?</h2>
+            <p>All phones currently available on boostmobile.com qualify for this offer. Select phones in stores qualify. </p>
+            <a class="learnmore" href="http://mobile.boostmobile.com/mt/www.boostmobile.com/shop/phones/">Shop Phones</a>
+        </div>  
+
+        <a name="termslegal"></a>
+        <div class="content" id="terms">
+            <p><strong>Offer ends 3/10/15.  Boost reserves the right to modify, extend or cancel offer at any time.</strong></p>
+            <p><strong>Free Month Offer:</strong> Avail. at participating dealers and boostmobile.com, while supplies last and with new Boost device activated on a new monthly plan. Customer responsible for all recurring charges after free month.  Basic phones must activate on the $35 Data Boost plan to receive credit.</p>
+            <p><strong>In-store only:</strong> Free month available only at participating dealers and limited to select models. Amount of credit towards first month's charges varies, dependent on plan and device and does not include cost of add-ons/incremental charges. Excludes taxes. Not combinable with certain other promotions or offers.     </p>
+            <p><strong>Boostmobile.com only:</strong> Credit amount for monthly service dependent on plan and device  and does not include cost of add-ons and/or incremental charges. Offer limited to purchase of devices ordered online or phone from boostmobile.com. Device must be activated by 3/29/2015, with account credit applied within two weeks after first month's payment.   </p>
+            <p>Coverage &amp; offers not available everywhere. Offer, prohibited use rules &amp; other restrictions apply. See participating dealer for details. ©2015 Boost Worldwide, Inc. All rights reserved</p>
+        </div>     
+           
+      ]]></main>
+    </content>
+</page>
