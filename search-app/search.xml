@@ -17,26 +17,18 @@
         <metaKeywords></metaKeywords>
         <metaImage></metaImage>
 
-        <!-- CSS Files -->
+       <!-- CSS Files -->
         <stylesheets>
             <file>
-                <link>/shop/_css/style.css</link>
-            </file>
-            <file>
-                <link>/search/search.css</link>
+                <link>/search/search.min.css</link>
             </file>
         </stylesheets>
     
         <!-- Javascript -->
         <scripts>
-            <!-- Files -->
             <file>
-                <link type="async">/_themes/libs/js/jquery.quicksearch.min.js</link>
+                <link type="async">/search/search.min.js</link>
             </file>
-            <file>
-                <link type="async">/search/search.js</link>
-            </file>
-         
         </scripts>
     
         <!-- Analytics Tagging -->

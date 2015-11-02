@@ -1,13 +1,16 @@
-//Search application
-//Used on /search/ AND on the 404 page
-//Requires jquery quicksearch plugin for the merch search piece
+// @koala-prepend "../_themes/libs/js/jquery.quicksearch.min.js"
+
+/**
+ * Main site search application
+ * Used on search and 404 page. Requires jquery quicksearch plugin for merch search piece
+ * @type Function|search_L9.bmSearch
+ */
 window.bmSearch = (function() {
     'use strict';
 
-    /**
-     * Public variables
-     */
+    //Public vars/object
     var bmSearch = {};
+    //Private Vars
     var params = {
         searchTerm: window.urlParams.q,                                         //Get search term from the URL params. This value is set in /_themes/h5bp/js/scripts.pre.js
         merchFeedPath: '/feed/search-merch/',                                   //URL to ajax search merch content from
@@ -45,9 +48,9 @@ window.bmSearch = (function() {
      * @param {type} pageType - Leave blank for default, set to 'solo' for standalone page
      * @returns {undefined}
      */
-    bmSearch.load = function(pageType) {
-        //If this is a standalone page
-        if (pageType === 'solo') {
+    bmSearch.load = function() {
+        //If this is the 404 page
+        if ($('#shopHub404').length !== 0) {
             params.page = 'solo';
             $(".banners").load("/search/ .banners", function() {
                 banners();

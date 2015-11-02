@@ -1,0 +1,99 @@
+/*     
+    Document   : Search App StyleSheet
+    Author     : Jerrol Krause
+    Description:
+        SCSS file for search app
+*/
+
+@import '../_themes/h5bp/css/_variables.scss';
+@import '../_themes/h5bp/css/_mixins.scss';
+@import '../_themes/h5bp/css/_placeholders.scss';
+
+
+#locatorContainer{
+    background-color:#fff;clear: both;
+    p{margin-top:0px;}
+
+    #locatorHeader{
+        background-image: url(/stores/images/stores-banner.jpg);background-repeat:no-repeat;background-position:top right;height:112px;padding-top:34px;padding-left:42px;
+        p{width:480px;font-size:12px;}
+    }
+
+    #locatorForm, #error{color:#fff;padding:20px;padding-left:34px;}  
+    #locatorForm{
+        .h2{margin-bottom:10px;}
+        h2{font-size:25px;font-weight:normal;color:#fff;margin-bottom:15px;}
+        form{display:inline-block;padding-top:15px;padding-bottom:20px;}
+        #zipcode{font-size:16px;padding:3px;width:190px;margin-right:10px;}
+        #submit{font-size:16px;border:0px;padding:5px;padding-left:15px;padding-right:15px;color:#fff;}
+        #submit:hover{position:relative;@include gradient($teal,$teal-dk);}
+        #locatorFormOptions{
+            margin:0px;padding:0px;
+            li{float:left;list-style-type: none;margin-right: 10px;font-size: 11px;}
+            .ie9 li, .lt-ie9 li{margin-right: 7px;}
+            label{position: relative;left: -3px;}
+            label:hover{color:#6fdbdb;}
+            .icon-phone{width:12px;}
+            .icon-reboost{width:15px;}
+        }
+    }
+    #error h2{font-size:24px;}
+
+    #locatorFeatured{
+        clear: both;position:relative;border:1px solid #e3e3e3;padding:10px;padding-bottom:15px;padding-top:15px;margin-top: 15px;color:#7f7f7f;font-size:12px;@include gradient(#fff,#eff0ef);
+        ul{margin:0px;padding:0px;}
+            li{float:left;width:288px;margin:0px;padding:0px;padding-top:10px;padding-bottom:10px;list-style-type: none;border-right:1px dotted #a5a4a5;text-align:center;}
+            li:last-child{border:0px;}
+        h2{display: inline-block;font-size:16px;}
+        .title{color:#000;margin-bottom:20px;}
+        .title span{color:#f7901e;}
+    }
+
+    #locatorTop, .showing-results{padding-left:35px;padding-right:35px;}
+
+    #locatorNormal{
+        color:#7f7f7f;font-size:12px;padding-top:20px;
+        h2{display: inline-block;font-size:16px;}
+        h2 a{font-size:16px;}
+        tr{border-bottom:1px dotted #a5a4a5;}
+        td{padding-top:20px;padding-bottom:20px;vertical-align: middle;}
+        .cell{width:40%;padding-left:35px;}
+        .centerTextvert{width:20%;text-align:center;}
+        .centerTextvert2{width:20%;text-align:center;}
+        .centerText{width:20%;text-align:center;}
+        .preferred{background-color:#f9fbfa;}
+    }   
+
+    #locatorResults{
+        padding-bottom:35px;padding-top:20px;
+        h1{font-size:25px;margin-bottom:0px;}
+        table{width:100%;}
+        .title{color:#807f80;font-size:20px;display:block;padding-bottom:5px;margin-bottom: 5px;}
+        .showing-results{border-bottom:1px dotted #a5a4a5;padding-bottom:20px;}
+    }
+
+    #pagination{
+        text-align:center;padding-top:10px;
+        ul{margin:0px;padding:0px;display:inline-block;margin-left:auto;margin-right:auto;}
+        li{float:left;margin:0px;padding:0px;list-style-type: none;}
+        a{display:block;width:25px;line-height:25px;text-decoration: none;color:#fff!important;margin-right:3px;@include border-radius(3px);@include gradient(#8b8989,#434343);}
+        a:hover{ @include gradient($orange-main,$orange-dk);}
+        .active{cursor:default;@include gradient(#6fdbdb,#57b5b0); }
+    }
+
+    #adBox{
+        padding-top:20px;padding-left:35px;padding-right:35px;padding-bottom:0px;color:#7f7f7f;font-size:12px;
+        h3{font-size:16px;margin:0px;}
+    }
+
+    .icons{margin-left:2px;height:20px;width:20px;overflow:hidden;text-indent:-9999px;background-image: url(/stores/images/icons.png);background-repeat:no-repeat;background-position:2px 0px!important;display:inline-block;position: relative;top: 4px;}    
+    .icon-reboost{background-position:0px -37px!important;}
+    .icon-wallet{background-position:0px -76px!important;margin-right: 5px;}
+    .icon-pin{background-position:0px -118px!important;margin-right: 5px;}
+    .icon-boost{background-position:0px -155px!important;margin-right: 4px;}
+    .icons-callout{padding-left: 7px;float:left;position: relative;top: -6px;}
+    .st-tooltip{width:200px;}
+    .st-tooltip-name{margin:0px;}
+    .gm-style-iw div{overflow:hidden;}
+    .legend{float:right;margin-top: 5px;display:none;}
+}

@@ -1,13 +1,17 @@
-//Store locator application 
-//REQUIRES gmap3 for mapping data
+// @koala-prepend "../_themes/libs/js/gmap3.min.js" //Loaded exclusively by this app so concat
+
+
+/**
+ * Store locator application
+ * @type stores_L12.bmStoreLocator|Function
+ */
 window.bmStoreLocator = (function() {
     'use strict';
+
     /**
-     * Public variables
+     * Public variables/app
      */
-    var bmStoreLocator = {
-        errors : []         //Log any issues here to prevent and console.log conflicts
-    };
+    var bmStoreLocator = {};
 
     /**
      * Start the application
@@ -15,14 +19,15 @@ window.bmStoreLocator = (function() {
      */
     bmStoreLocator.load = function() {
         //Pass all filtering query params in the URL to the mapping application
+        //Build param string, urlParams set by scripts.pre.js
         var params = '';
         $.each(window.urlParams , function(key,value){
             params += '&' + key + '=' + value;
         });
         
-        //Fetch the location data from the map location API
+        //Fetch the location data from the location API
         $.ajax({
-            url: '##REMOVED##' + params,
+            url: '##REMOVED##&mime_type=application/json&results=50' + params,
             success: function(data) {
                 //Make sure this area has at least 1 location
                 if (data.length > 1) {
@@ -35,20 +40,23 @@ window.bmStoreLocator = (function() {
                     $('.legend').fadeIn();
                 }
             },
-            //Log any errors to object
+            //Log any errors to app
             error: function(xhr, err) {
-                bmStoreLocator.errors.push(xhr);
-                bmStoreLocator.errors.push(err);
+                bmStoreLocator.errors = err;
             }
         });
+        
+        //Interaction events
+        events();
         
         //Load analytics
         analytics.trackPage();
         analytics.trackEvents();
-    };
+    };//end bmStoreLocator.load
     
     /**
-     * Load the data returned from the servlet into the map application. Requires gmap3 to be loaded first.
+     * Load the data returned from the servlet into the map application. 
+     * Requires gmap3 to be loaded first.
      * @param {json} data - A json object containing the location data
      * @returns {undefined}
      */
@@ -92,6 +100,26 @@ window.bmStoreLocator = (function() {
     };//end loadMap
     
     
+    /**
+     * Plugin/interaction events
+     * @returns {undefined}
+     */
+    var events = function(){
+        //Launch tooltips
+        $('#locatorFormOptions label').qtip();
+        $('.tooltip').each(function () {
+            var self = $(this);
+            self.qtip({
+                content: self.html(),
+                hide: {
+                    fixed: true,
+                    delay: 250
+                }
+            });
+        });
+    };//end events
+    
+    
     //Object to contain analytics methods
     //Requires omniture's s_code.js
     var analytics = {
@@ -124,7 +152,7 @@ window.bmStoreLocator = (function() {
             }
             //Submit data
             analytics.submit();
-        },
+        },//end analytics.trackPage
         
         /**
          * Analytics for event tracking
@@ -140,7 +168,7 @@ window.bmStoreLocator = (function() {
                 window.s.prop29 = 'Store Locator > Store Locator Results > Featured Store' + ' ' + index + ' ' + $(this).closest('li').find('h2').text();
                 analytics.submit('click');
             });
-        },
+        },//end analytics.trackEvents
                 
         /**
          * Sends the data to omniture
@@ -155,8 +183,8 @@ window.bmStoreLocator = (function() {
             } else {
                 window.s.t();
             }
-        }
-    };
+        }//end analytics.submit
+    };//end analytics
     
     //Start application
     bmStoreLocator.load();

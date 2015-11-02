@@ -1,0 +1,78 @@
+/*     
+    Document   : Search App StyleSheet
+    Author     : Jerrol Krause
+    Description:
+        SCSS file for search app
+*/
+
+@import '../_themes/h5bp/css/_variables.scss';
+@import '../_themes/h5bp/css/_mixins.scss';
+@import '../_themes/h5bp/css/_placeholders.scss';
+
+//Main App
+#search{
+    padding:40px;padding-top:30px;background-color:#fff;margin-top:10px;clear:both;
+    a:link, a:visited{color:$orange-main!important;text-decoration: none!important;}
+    a:hover{color:$teal!important;}
+    .search_box{float:left;margin-right:20px;font-size:22px;overflow: hidden;}
+    .col_left{float:left;width:75%;margin-right:5%;}
+    .col_right{float:left;width:20%;text-align:right;}
+
+    #searchMerchContent{
+        padding-top:10px;clear:both;font-size:13px;display:none;
+        .recomended{font-size:18px;margin-bottom:8px;}
+        #searchMerchResults{height:100px;overflow:hidden;width:660px;}
+        .brandname, .phonename{font-size: 16px;}
+        .frame{float:left;width:200px;margin-right:20px;height:100px;display:none;overflow:hidden;}
+        .show{display:block!important;}
+        sup{top: -1em;}
+        img{float:left;margin-right:5px;}
+    }
+
+    //Format results from product
+    #searchMerchResults{
+        .phonePrevPrice{color:#000;text-decoration: line-through;}
+        .phonePriceInCart{color:#000;}
+        .phoneSalePrice{font-size: 20px;}
+        span.phoneRating { display: inline-block;color:#000;  font-size:13px; line-height:1.3em; background:url('/shop/_images/icons/sprite_shop_icons.png') no-repeat; }
+        span.star5point0 { padding-left: 78px; background-position: -150px top; }
+        span.star4point5 { padding-left: 74px; background-position: -150px -34px; }
+        span.star4point0 { padding-left: 64px; background-position: -150px -68px; }
+        span.star3point5 { padding-left: 60px; background-position: -150px -102px; }
+        span.star3point0 { padding-left: 50px; background-position: -150px -136px; }
+        span.star2point5 { padding-left: 44px; background-position: -150px -170px; }
+        span.star2point0 { padding-left: 38px; background-position: -150px -204px; }
+        span.star1point5 { padding-left: 32px; background-position: -150px -238px; }
+        span.star1point0 { padding-left: 24px; background-position: -150px -272px; }
+        span.star0point5 { padding-left: 18px; background-position: -150px -306px; }
+        span.star0point0 { padding-left: 6px; background-position: -150px -340px; }
+        span.phoneRating a { display:inline-block; height:18px; line-height:18px; }
+    }
+    
+    //Google custom search css overrides. No ID unfortunately
+    #___gcse_1, #___gcse_0{float:left!important;width: 530px!important;}
+   
+    .gsc-control-cse{padding:0px!important;}
+    .gsc-search-box{padding:0px!important;padding-top:3px!important;}
+    .gsc-result-info{padding-left:0px!important;}
+    .gsc-clear-button{display:none;}
+
+    input.gsc-search-button{border:0;@include gradient($orange-main,$orange-dk);}
+    input.gsc-search-button:hover{@include gradient($teal,$teal-dk);}
+
+    .gsc-tabsArea{border-color: #262626;}
+    .gsc-tabHeader{font-size:14px;border:0px;padding-top:5px;padding-bottom:2px;padding-left:15px;padding-right:15px;text-transform: none;font-family: Arial,Helvetica,sans-serif!important;font-weight:normal!important;position:relative;
+                   @include gradient(#626161,#262626);
+                   -webkit-border-radius: 3px 3px 0 0;-moz-border-radius: 3px 3px 0 0;border-radius: 3px 3px 0 0;behavior: url(/_themes/libs/PIE.htc);}
+    .gsc-tabhActive{@include gradient($orange-main,$orange-dk);}
+    .gsc-tabHeader:hover{ @include gradient($teal,$teal-dk);}
+    .gs-image{border:0!important;}
+    .gs-per-result-labels{display:none;}
+
+    .gsc-cursor{width: 360px;display:block;margin-left: auto;margin-right: auto;}
+    .gsc-cursor-page{width:30px;line-height:25px;display:block;float:left;padding-top:1px;margin:3px;background-color:#7a7c7e;display:block;font-size:14px;color:#fff!important;text-decoration:none;text-align:center;cursor:pointer;font-family:BoostNeoGroteskRegular,Arial,Helvetica,sans-serif;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;position:relative;behavior:url(/_themes/libs/PIE.htc);}
+    .gsc-cursor-page:hover{background-color: #6fdbdb!important;}
+    .gsc-cursor-current-page{background-color: #f5941e;padding:0px;text-shadow: none;padding-top: 1px;}
+    .gs-webResult div.gs-visibleUrl, .gs-imageResult div.gs-visibleUrl {color: #999;}
+    .gs-spelling a, .gs-spelling a {color: #f5941e!important;}
+} 
